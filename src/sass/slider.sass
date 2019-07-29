@@ -1,0 +1,19 @@
+.slider-wrapper
+  width: 100%
+  height: calc(100vh - 50px)
+  position: relative
+.slider
+  position: absolute
+  display: flex
+  top: 0
+  left: 0
+  flex: 1
+  height: 100%
+  width: auto
+  transition: left 0.4s ease-in-out
+  &__item
+    flex-direction: row
+    display: block
+    width: 100vw
+    height: calc(100vh - 50px)
+    object-fit: cover

@@ -1,5 +1,3 @@
-// import '@babel/polyfill';
-
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -33,11 +31,6 @@ var config = {
                 test: /\.(png|jpe?g|gif)$/,
                 use: ['file-loader'],
             },
-            // {
-            //     test: /\.(css|sass)$/,
-            //     use: ['style-loader', 'css-loader', 'sass-loader']
-            //
-            // },
             {
                 test: /\.(css|sass)$/,
                 exclude: /node_modules/,
