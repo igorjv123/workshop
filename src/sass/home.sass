@@ -12,12 +12,48 @@
 
   .home-content
     display: flex
+    flex-direction: column
     justify-content: center
     align-items: center
     color: #fff
     height: 50%
     width: 40%
     box-sizing: content-box
+    &__buttons
+      display: flex
+      width: 320px
+      justify-content: center
+      align-content: center
+      height: 100px
+
+    .yes-btn
+      border-radius: 4px
+      border: 3px solid #f1f1f1
+      background: #f1f1f1
+      width: 100px
+      height: 30px
+      margin: 20px 15px
+      cursor: pointer
+      font-weight: 700
+      &:hover
+        background: #ccc
+        border: 3px solid #ccc
+
+    .no-btn
+      font-weight: 700
+      border-radius: 4px
+      border: 3px solid #f1f1f1
+      background: none
+      color: #f1f1f1
+      width: 100px
+      height: 30px
+      margin: 20px 15px
+      cursor: pointer
+      &:hover
+        background-color: rgba(0,0,0,.5)
+        border: 3px solid #ccc
+
+
 
 
 

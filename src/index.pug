@@ -33,7 +33,12 @@ html(lang='en')
                 a.burger-menu__item(href='#when-how') Offer
         section.home-wrapper#home(tabindex='0')
             .home-content
-                h1(role='heading' aria-level='1') Tired of living?
+                h1.home-text(role='heading' aria-level='1') Tired of living?
+                .home-content__buttons
+                    a(href='#cruise-info')
+                        button.yes-btn Yes
+                    a.no-link(href='https://jquery.com' target="_blank")
+                        button.no-btn No
         section.cruise-info#cruise-info(tabindex='0')
             img.cruise-info__img(src='./assets/cruise-ship-png-transparent-image.png' alt='cruise ship')
             .cruise-info__text
