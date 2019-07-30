@@ -8,15 +8,19 @@
   display: flex
   justify-content: space-between
   position: fixed
-  z-index: 100
+  z-index: 1000
   color: #fff
   transition: background-color 0.2s ease-in-out 0.1s
 
   .header-logo
-    display: flex
-    align-items: center
-    padding: 0 20px
-    &__logo
+    & a
+      display: flex
+      align-items: center
+      padding: 0 20px
+      text-decoration: none
+      color: #f1f1f1
+      text-wrap: none
+    &__img
       display: block
       height: 40px
       width: 40px
@@ -26,6 +30,8 @@
     align-items: center
     justify-content: center
     padding: 0 20px
+    +middle-screen
+      display: none
 
     &__item
       display: flex

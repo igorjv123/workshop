@@ -7,37 +7,65 @@ html(lang='en')
         meta(name='author' content='')
         title Cruise "Titanic 2"
     body
+
         header.header-wrapper
             .header-logo
-                img.header-logo__img
-                p.header-logo__text Titanic 2
+                a(href="#")
+                    img.header-logo__img(alt='logo' src='./assets/logo.png')
+                    p.header-logo__text Titanic 2
             nav.header-nav
                 p.header-nav__item
-                    a(href='#') Home
+                    a(href='#home') Home
                 p.header-nav__item
-                    a Trip
+                    a(href='#cruise-info') Info
                 p.header-nav__item
-                    a Buy
+                    a(href='#slider') Photos
                 p.header-nav__item
-                    a Home
-        section.home-wrapper
+                    a(href='#when-how') Offer
+            .burger-button
+                div
+                div
+                div
+            .burger-menu
+                a.burger-menu__item(href='#home') Home
+                a.burger-menu__item(href='#cruise-info') Info
+                a.burger-menu__item(href='#slider') Photos
+                a.burger-menu__item(href='#when-how') Offer
+        section.home-wrapper#home(tabindex='0')
             .home-content
-                h1 Tired of living?
-        section.cruise-info
-            img.cruise-info__img(src='../assets/cruise-ship-png-transparent-image.png')
+                h1(role='heading' aria-level='1') Tired of living?
+        section.cruise-info#cruise-info(tabindex='0')
+            img.cruise-info__img(src='./assets/cruise-ship-png-transparent-image.png' alt='cruise ship')
             .cruise-info__text
-                h1.yellow-text Titanic 2
+                h1.q(role='heading' aria-level='1') Titanic 2
                 br
                 h1 Tired of stupid friends, a family, an evil boss?
                 h1 -
-                    span.yellow-text WKY
+                    span.q WKY
                     |  offers you an unforgettable Atlantic cruise on the newest Titanic 2
-        section.slider-wrapper
+        section.slider-wrapper#slider(tabindex='0')
+            i.slider-arrow.left-arrow
+            i.slider-arrow.right-arrow
+            .slider-indicators-container
+                .slider-indicator
+                .slider-indicator
+                .slider-indicator
             .slider
-                img.slider__item(src='../assets/cruise-ship-restaurant.jpg')
-                img.slider__item(src='../assets/cruise-ship-restaurant.jpg')
-                img.slider__item(src='../assets/cruise-ship-restaurant.jpg')
-        //section.home-wrapper
-        //    //iframe(frameborder='0', height='100%', width='100%', src='https://youtube.com/embed/ID?autoplay=1&controls=0&showinfo=0&autohide=1')
-        //    //.home-content
+                img.slider__item(src='./assets/cruise-ship-restaurant.jpg' alt='restaurant')
+                img.slider__item(src='./assets/waterpool2.jpg' alt='water pool')
+                img.slider__item(src='./assets/dicaprio-in-water.webp' alt = 'dicaprio in water')
+        section.when-how#when-how(tabindex='0')
+            .when-how__text
+                h1(role='heading' aria-level='1')  What this
+                    span.q  trip
+                    |  involves?
+                br
+                h2
+                    ul
+                        li 4 days unforgettable cruise
+                        li Delicious food
+                        li Lots of fun
+                        li Swimming in the Atlantic Ocean
+                button.buy-ticket Buy ticket
+            .when-how__img
 

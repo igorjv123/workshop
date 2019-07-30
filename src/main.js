@@ -2,7 +2,7 @@ import './sass/style.sass'
 import './scripts/homeBackgroundAnimation'
 import './scripts/headerAnimation'
 import './scripts/slider'
-console.log(1)
+import './scripts/burger-menu.js'
 
 // blue #33C7D4
 // dark gray #48484A

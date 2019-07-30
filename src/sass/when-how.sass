@@ -1,0 +1,54 @@
+.when-how
+  width: 100%
+  min-height: 600px
+  height: calc(100vh - 50px)
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  +middle-screen
+    height: auto
+    flex-flow: column-reverse
+  &__text
+    height: calc(100vh - 90px)
+    min-width: 320px
+    width: calc(40% - 40px)
+    background-color: #002456
+    color: #fff
+    padding: 20px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    +middle-screen
+      width: 100%
+    & h1
+      font-size: 3em
+      padding: 10px
+    & h2
+      font-size: 2em
+      padding: 20px
+  &__img
+    min-width: 320px
+    width: 60%
+    height: calc(100vh - 50px)
+    background-image: url("../assets/never-let-go-jack-titanic.jpg")
+    background-size: cover
+    background-position: center
+    +middle-screen
+      width: 100%
+
+
+  .buy-ticket
+    width: 200px
+    height: 50px
+    cursor: pointer
+    background-color: yellow
+    border: none
+    border-radius: 3px
+    color: #002456
+    font-size: 2em
+    margin-top: 40px
+
+    &:hover
+      background-color: #FFD42E
