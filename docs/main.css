@@ -1,3 +1,74 @@
+.modal-window {
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center; }
+  .modal-window__content {
+    width: 400px;
+    min-height: 200px;
+    background: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    padding: 20px; }
+  .modal-window .buy-ticket {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center; }
+    .modal-window .buy-ticket__input {
+      display: block;
+      border: 1px solid #dddddd;
+      border-radius: 3px;
+      padding: 10px;
+      font-size: 24px;
+      margin-bottom: 20px; }
+  .modal-window .close-modal {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 20px;
+    background-color: #002456;
+    color: #fff;
+    margin: 20px; }
+
+.close-modal:hover {
+  background-color: #00193d; }
+
+.active-modal {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex; }
+
 .burger-button {
   cursor: pointer;
   margin-top: 5px;
